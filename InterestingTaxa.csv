@@ -1,0 +1,25 @@
+#
+# This is a list of interesting taxa.
+# The taxa are visualized in the output trees with the given colors
+# The format is one taxon per line and a ETE color definition
+# The taxon and the color are separated by a tab.
+# The taxa should not be part of the same lineage, the behavior is undefined if they are.
+# The taxa must start with a capital letter, otherwise they are not recognized, however
+# The taxa in the sequence IDs must be in the correct case, and must be spelt correctly,
+# but that would be a problem at NCBI or Swissprot.
+# Lines starting with # are comment lines, note the # must be the first character in the line.
+#
+# The five rows below (Taxa, Total, the ingroup row, Outgroup, Unknown) are
+# boilerplate legend rows expected by 12_ConvertTreesToFigures.py and
+# should stay, just rename "GeneFamily" in the ingroup row to this
+# repository's gene family.
+
+Taxa	Black	Title	0
+Total	Black	Total	0
+GeneFamily	Black	Ingroup	0
+Outgroup	Black	Outgroup	0
+Unknown	Black	Unknown	0
+
+# Add taxa of interest below, e.g.:
+#Metazoa	Black	LegendOnly	0
+#Chordata	Black	Regular	1

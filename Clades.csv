@@ -1,0 +1,22 @@
+# Reference sequence, clade label, and two colors per line, used to color
+# and label clades in the output tree figures. Columns are separated by a
+# tab.
+#
+# Column 1: the sequence ID of a reference sequence for the clade, exactly
+#           as it appears in the tree/alignment.
+# Column 2: the label to show for that clade.
+# Column 3: the color used for the clade in the tree.
+# Column 4: the color used for the clade's label background.
+#
+# The last (non-comment) entry is used as the outgroup for rooting the
+# tree, so it should be a reference sequence outside the ingroup.
+#
+# Additional files named *Clades.csv can be added for separate
+# clade-focused reruns of the pipeline for this gene family --
+# 12a_ConvertTreesToFiguresForAllClades.sh picks up any file matching that
+# pattern.
+#
+#SequenceID_Of_A_Reference_Sequence	CladeLabel	LimeGreen	PaleGreen
+
+# Use the last entry as outgroup for rooting the tree
+#SequenceID_Of_An_Outgroup_Reference	Outgroup	Black	White
