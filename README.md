@@ -3,9 +3,9 @@
 This is a template repository for setting up the gene-specific data and
 configuration needed to run
 [PhylogenyPipeline](https://github.com/MartinGuehmann/PhylogenyPipeline) on
-a new gene family. It is not runnable on its own; see
-[Opsins](https://github.com/MartinGuehmann/Opsins) for a repository
-instantiated from this template.
+a new gene family. It is not runnable on its own; it was generalized from
+[Opsins](https://github.com/MartinGuehmann/Opsins), which remains useful
+as an example.
 
 ## Using this template
 
