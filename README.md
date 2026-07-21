@@ -27,6 +27,10 @@ as an example.
    `OutgroupSequences/`, and `RerootSequences/` — otherwise fill them in
    as needed and remove their placeholder README.md files (see
    Subdirectories below).
+7. Optionally add `SpeciesForSeqReps.csv` if step 4's non-redundancy
+   filtering should prefer specific species as cd-hit's chosen
+   representative sequences (see Configuration files below). Has no
+   effect if omitted.
 
 ## Layout
 
@@ -124,6 +128,18 @@ examples. None are included in this template; add them as needed.
 	  to their correct name in the NCBI taxon database.
 	- InterestingTaxa.csv
 	  Taxa to highlight with specific colors in the output trees.
+	- SpeciesForSeqReps.csv
+	  Optional; has no effect at all if this file doesn't exist.
+	  Tab-separated, with the species' scientific name (as it appears in
+	  the FASTA sequence descriptions, e.g. from the NCBI/Uniprot hit
+	  headers) in column 2 — row order is priority order, highest first.
+	  Used by step 4's `PickSequenceRepresentatives.py` to override
+	  cd-hit's own representative choice for a cluster (by default,
+	  whichever sequence cd-hit's length-based sort processed first)
+	  with a member matching the highest-priority listed species found
+	  in that cluster, e.g. always preferring a well-annotated
+	  human/mouse/etc. sequence over an arbitrary longer hit. Falls back
+	  to cd-hit's own choice for any cluster with no matching member.
 
 `_SpecialAminoAcids.txt` configures 12_ConvertTreesToFigures.py to
 annotate a specific amino acid position of interest, numbered against a
@@ -150,7 +166,10 @@ Inputs:
 	  the pipeline only reads this directory if it exists.
 	- MustKeepSequences/
 	  Reference sequences that must survive non-redundancy filtering
-	  regardless of similarity to other sequences.
+	  regardless of similarity to other sequences. This guarantees
+	  inclusion only - it does not make a sequence cd-hit's chosen
+	  representative for its cluster (see SpeciesForSeqReps.csv above
+	  for that).
 	- OutgroupSequences/
 	  Outgroup sequences added to the pruning-guide tree and used for
 	  rooting it.
