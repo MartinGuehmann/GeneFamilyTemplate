@@ -1,0 +1,6 @@
+*.mldist
+*.ufboot
+*.png
+*.alignment.*.fasta
+!*.alignment.*treeSorted.fasta
+*.alignment.MAGUS/
