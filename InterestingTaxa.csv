@@ -21,5 +21,58 @@ Outgroup	Black	Outgroup	0
 Unknown	Black	Unknown	0
 
 # Add taxa of interest below, e.g.:
-#Metazoa	Black	LegendOnly	0
-#Chordata	Black	Regular	1
+Metazoa	Black	LegendOnly	0
+Bilateria	Black	LegendOnly	1
+
+Coelomata	Black	LegendOnly	2
+Deuterostomia	Black	LegendOnly	3
+Chordata	Black	LegendOnly	4
+Craniata	Black	LegendOnly	5
+Petromyzon	Turquoise	Regular	6
+Gnathostomata	Black	LegendOnly	6
+Chondrichthyes	HotPink	Regular	7
+Euteleostomi	Black	LegendOnly	7
+Actinopterygii	LimeGreen	Regular	8
+Sarcopterygii	Black	LegendOnly	8
+Coelacanthimorpha	Red	Regular	9
+Dipnotetrapodomorpha	Black	LegendOnly	9
+Dipnomorpha	Peru	Regular	10
+Tetrapoda	Black	LegendOnly	10
+Amphibia	Blue	Regular	11
+Amniota	Black	LegendOnly	11
+Mammalia	Orange	Regular	12
+Sauropsida	Black	LegendOnly	12
+Lepidosauria	YellowGreen	Regular	13
+Archelosauria	Black	LegendOnly	13
+Testudinata	Navy	Regular	14
+Archosauria	Black	LegendOnly	14
+Crocodylia	Firebrick	Regular	15
+Aves	Cyan	Regular	15
+
+Cephalochordata	DarkGreen	Regular	5
+Tunicata	LightSeaGreen	Regular	5
+
+Echinodermata	Green	Regular	4
+Hemichordata	OliveDrab	Regular	4
+
+Protostomia	Black	LegendOnly	3
+Annelida	Pink	Regular	4
+Bryozoa	DodgerBlue	Regular	4
+Arthropoda	DarKBlue	Regular	4
+Brachiopoda	DarkViolet	Regular	4
+Rotifera	CadetBlue	Regular	4
+Tardigrada	Tomato	Regular	4
+Onychophora	RosyBrown	Regular	4
+Mollusca	SteelBlue	Regular	4
+Nematoda	Brown	Regular	4
+
+Acoelomata	Black	LegendOnly	3
+Platyhelminthes	DarkGoldenrod	Regular	4
+
+Cnidaria	MediumOrchid	Regular	1
+Ctenophora	DarkOrange	Regular	1
+Choanoflagellata	Indigo	Regular	1
+Placozoa	DarkKhaki	Regular	1
+Viridiplantae	Green	Regular	0
+Fungi	DeepPink	Regular	0
+Discoba	Chocolate	Regular	0
