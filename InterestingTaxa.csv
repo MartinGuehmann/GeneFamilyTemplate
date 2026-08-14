@@ -28,7 +28,7 @@ Coelomata	Black	LegendOnly	2
 Deuterostomia	Black	LegendOnly	3
 Chordata	Black	LegendOnly	4
 Craniata	Black	LegendOnly	5
-Petromyzon	Turquoise	Regular	6
+Cyclostomata	Turquoise	Regular	6
 Gnathostomata	Black	LegendOnly	6
 Chondrichthyes	HotPink	Regular	7
 Euteleostomi	Black	LegendOnly	7
@@ -74,6 +74,8 @@ Ctenophora	DarkOrange	Regular	1
 Choanoflagellata	Indigo	Regular	1
 Porifera	Gold	Regular	1
 Placozoa	DarkKhaki	Regular	1
-#Viridiplantae	Green	Regular	0
+Viridiplantae	Green	Regular	0
 Fungi	DeepPink	Regular	0
 Discoba	Chocolate	Regular	0
+Amoebozoa	SlateBlue	Regular	0
+Rhizaria	Magenta	Regular	0
