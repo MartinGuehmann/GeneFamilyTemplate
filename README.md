@@ -102,7 +102,19 @@ this repository instead of into `PhylogenyPipeline`.
 	  Restart tree building (Scheduler-16-TreeBuildScheduler.sh):
 	  repeatedly runs the alignment/rogue-removal step (step 9) across
 	  aligners to build the final trees. The final step; nothing to
-	  continue into.
+	  continue into. Every call also does two things beyond just
+	  continuing `aligner`'s (Config.sh's current main aligner) own
+	  round loop: it submits one more round for every *other* available
+	  aligner not listed in `SkippedAligners.cfg` (so the cross-aligner
+	  comparison in `Alignments/` stays roughly in step even though only
+	  one aligner is actively being iterated at a time), and it submits
+	  one comparison round for the main aligner with `trimAl` switched
+	  to the opposite of Config.sh's current setting (a `*.BigTree0.
+	  noTrimAl` tree if trimAl is on, or `*.BigTree0.trimAl` if it's
+	  off) - so changing which aligner is "main" in Config.sh, e.g. to
+	  see whether a different aligner's rogue-removal behaves better,
+	  automatically gets that aligner's own trimAl/noTrimAl comparison
+	  too, not just its regular continuation.
 
 Each of these picks the gene name up from its own directory name, so they
 only work correctly when run from within this checkout.
