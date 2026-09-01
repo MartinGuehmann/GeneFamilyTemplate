@@ -24,5 +24,6 @@ any of them still lands inside it, so an imperfect choice can't
 contaminate real output - it just costs some recall on the chunk where
 it happens.
 
-Delete this file once real sequences have been added; it only exists to
-keep this otherwise-empty directory tracked in git.
+Keep this file even after adding real sequences here - it documents the
+role above, not just placeholder boilerplate for an otherwise-empty
+directory.

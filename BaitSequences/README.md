@@ -28,5 +28,6 @@ bait" is well-defined) and `AnchorSequences/` (the opposite of bait -
 known, unambiguously *distant* references that must never end up inside
 the extracted clade).
 
-Delete this file once real bait sequences have been added; it only exists
-to keep this otherwise-empty directory tracked in git.
+Keep this file even after adding real sequences here - it documents the
+role above, not just placeholder boilerplate for an otherwise-empty
+directory.

@@ -13,8 +13,8 @@ as an example.
    repository from this one, and rename it to the gene family it will
    hold (the repository/directory name is used as the gene name, see
    Layout below).
-2. Add bait/seed sequences to `BaitSequences/` and remove the placeholder
-   `BaitSequences/README.md`.
+2. Add bait/seed sequences to `BaitSequences/` - its `README.md` documents
+   the role and is worth keeping, not deleting.
 3. Fill in `Clades.csv` and `InterestingTaxa.csv` with reference sequences
    and taxa for this gene family, and rename the ingroup row in
    `InterestingTaxa.csv` accordingly.
@@ -25,10 +25,11 @@ as an example.
 6. If this gene family won't go through the pruning-guide-tree step,
    delete `AdditionalBaitSequences/`, `MustKeepSequences/`,
    `OutgroupSequences/`, and `RerootSequences/` — otherwise fill them in
-   as needed and remove their placeholder README.md files (see
-   Subdirectories below). `AnchorSequences/` is separate: leave it empty
-   even when using the pruning-guide-tree step unless per-chunk
-   extraction counts turn out unstable (see its own README.md).
+   as needed (see Subdirectories below; their README.md files document
+   each one's role and are worth keeping, not deleting).
+   `AnchorSequences/` is separate: leave it empty even when using the
+   pruning-guide-tree step unless per-chunk extraction counts turn out
+   unstable (see its own README.md).
 7. Optionally add `SpeciesForSeqReps.csv` if step 4's non-redundancy
    filtering should prefer specific species as cd-hit's chosen
    representative sequences (see Configuration files below). Has no

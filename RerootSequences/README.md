@@ -14,5 +14,6 @@ branches of that trifurcation at once, in which case `nw_reroot` fails
 for that chunk - `16_ExtractSequencesOfInterest.sh` retries each leaf
 individually before giving up and extracting unrerooted.
 
-Delete this file once real sequences have been added; it only exists to
-keep this otherwise-empty directory tracked in git.
+Keep this file even after adding real sequences here - it documents the
+role above, not just placeholder boilerplate for an otherwise-empty
+directory.

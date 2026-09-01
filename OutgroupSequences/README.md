@@ -18,5 +18,6 @@ That third role is what sets these apart from `RerootSequences/` and
 `AnchorSequences/`, which only ever affect the transient per-chunk
 pruning trees and never appear in the final output.
 
-Delete this file once real sequences have been added; it only exists to
-keep this otherwise-empty directory tracked in git.
+Keep this file even after adding real sequences here - it documents the
+role above, not just placeholder boilerplate for an otherwise-empty
+directory.
