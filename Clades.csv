@@ -7,9 +7,12 @@
 # Column 2: the label to show for that clade.
 # Column 3: the color used for the clade in the tree.
 # Column 4: the color used for the clade's label background.
-#
-# The last (non-comment) entry is used as the outgroup for rooting the
-# tree, so it should be a reference sequence outside the ingroup.
+# Column 5 (optional): the literal tag "Outgroup" marks this clade as part
+#           of the outgroup used for rooting the tree. Any number of
+#           clades can carry this tag, so the outgroup can be made up of
+#           more than one clade. If NO clade in this file has the tag
+#           (column 5 omitted entirely, as below), the last (non-comment)
+#           entry is used instead, same as before this column existed.
 #
 # Additional files named *Clades.csv can be added for separate
 # clade-focused reruns of the pipeline for this gene family --
@@ -18,5 +21,10 @@
 #
 #SequenceID_Of_A_Reference_Sequence	CladeLabel	LimeGreen	PaleGreen
 
-# Use the last entry as outgroup for rooting the tree
+# Fallback convention (no clade tagged Outgroup anywhere in this file):
+# the last entry is used as the outgroup for rooting the tree, so it
+# should be a reference sequence outside the ingroup. Column 2 here is
+# just this clade's display label (it happens to be named "Outgroup" for
+# clarity) - it's column 5 that would actually tag a clade, e.g.
+# "...Reference	Some Clade Name	Black	White	Outgroup".
 #SequenceID_Of_An_Outgroup_Reference	Outgroup	Black	White
